@@ -1,0 +1,5 @@
+task,artifact,hash,created,git,python,sklearn,notes
+emotions,artifacts\emo_sgd_partial_models_resumed_final.joblib,00f163274b3d685b00fde76f9a2cc09c83c057ec2364398d54be4c93614bdde5,2025-09-21 20:56:07,,3.11.5,1.7.2,OVR LR / Calibrated LinearSVC / SGD partial_fit; thresholds per-label (thr_mean_floor).
+sentiment,models\clf_logreg_chi2_final_20250918_231306.joblib,e11a2fa13da4556b0bf421096e77b7f527ff23da37b05624576166524868be22,2025-09-21 20:56:07,,3.11.5,1.7.2,LogReg TF-IDF (chi2/L1/SVD optionnels) — grid + calibration + seuils val si fournis.
+sentiment,models\clf_logreg_chi2_final_20250919_114948.joblib,53adb080b195e2f10e957850c53ca3ebcaf5a015ce2089156177945c6ba79c88,2025-09-21 20:56:07,,3.11.5,1.7.2,LogReg TF-IDF (chi2/L1/SVD optionnels) — grid + calibration + seuils val si fournis.
+sentiment,models\clf_logreg_chi2_final_20250912_235354.joblib,c91c05601524c8ab05cd76c862a72a718d49cc420729903d994b4b8213dc102a,2025-09-21 20:56:02,,3.11.5,1.7.2,LogReg TF-IDF (chi2/L1/SVD optionnels) — grid + calibration + seuils val si fournis.

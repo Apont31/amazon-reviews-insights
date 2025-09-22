@@ -1,0 +1,112 @@
+[
+  {
+    "task": "sentiment",
+    "artifact": "models\\clf_logreg_chi2_final_20250912_235354.joblib",
+    "hash": "c91c05601524c8ab05cd76c862a72a718d49cc420729903d994b4b8213dc102a",
+    "created": "2025-09-21 20:56:02",
+    "git": null,
+    "env": {
+      "python": "3.11.5",
+      "platform": "Windows-10-10.0.26100-SP0",
+      "sklearn": "1.7.2",
+      "numpy": "2.3.3",
+      "pandas": "2.2.2",
+      "torch": "2.4.1+cu121",
+      "lightgbm": null
+    },
+    "notes": "LogReg TF-IDF (chi2/L1/SVD optionnels) — grid + calibration + seuils val si fournis.",
+    "meta": {
+      "artifact": "clf_logreg_chi2_final_20250912_235354.joblib",
+      "X_shape": [
+        120000,
+        180007
+      ],
+      "train/val/test": {
+        "train": 96000,
+        "val": 12000,
+        "test": 12000
+      },
+      "threshold": 0.2748431536764288,
+      "notes": "TF-IDF -> chi2(k) -> LogReg(lbfgs)."
+    }
+  },
+  {
+    "task": "sentiment",
+    "artifact": "models\\clf_logreg_chi2_final_20250918_231306.joblib",
+    "hash": "e11a2fa13da4556b0bf421096e77b7f527ff23da37b05624576166524868be22",
+    "created": "2025-09-21 20:56:07",
+    "git": null,
+    "env": {
+      "python": "3.11.5",
+      "platform": "Windows-10-10.0.26100-SP0",
+      "sklearn": "1.7.2",
+      "numpy": "2.3.3",
+      "pandas": "2.2.2",
+      "torch": "2.4.1+cu121",
+      "lightgbm": null
+    },
+    "notes": "LogReg TF-IDF (chi2/L1/SVD optionnels) — grid + calibration + seuils val si fournis.",
+    "meta": {
+      "artifact": "clf_logreg_chi2_final_20250918_231306.joblib",
+      "X_shape": [
+        120000,
+        180007
+      ],
+      "train/val/test": {
+        "train": 96000,
+        "val": 12000,
+        "test": 12000
+      },
+      "threshold": 0.3014459065579162,
+      "notes": "TF-IDF -> chi2(k) -> LogReg(lbfgs)."
+    }
+  },
+  {
+    "task": "sentiment",
+    "artifact": "models\\clf_logreg_chi2_final_20250919_114948.joblib",
+    "hash": "53adb080b195e2f10e957850c53ca3ebcaf5a015ce2089156177945c6ba79c88",
+    "created": "2025-09-21 20:56:07",
+    "git": null,
+    "env": {
+      "python": "3.11.5",
+      "platform": "Windows-10-10.0.26100-SP0",
+      "sklearn": "1.7.2",
+      "numpy": "2.3.3",
+      "pandas": "2.2.2",
+      "torch": "2.4.1+cu121",
+      "lightgbm": null
+    },
+    "notes": "LogReg TF-IDF (chi2/L1/SVD optionnels) — grid + calibration + seuils val si fournis.",
+    "meta": {
+      "artifact": "clf_logreg_chi2_final_20250919_114948.joblib",
+      "X_shape": [
+        120000,
+        180007
+      ],
+      "train/val/test": {
+        "train": 96000,
+        "val": 12000,
+        "test": 12000
+      },
+      "threshold": 0.3014459065579162,
+      "notes": "TF-IDF -> chi2(k) -> LogReg(lbfgs)."
+    }
+  },
+  {
+    "task": "emotions",
+    "artifact": "artifacts\\emo_sgd_partial_models_resumed_final.joblib",
+    "hash": "00f163274b3d685b00fde76f9a2cc09c83c057ec2364398d54be4c93614bdde5",
+    "created": "2025-09-21 20:56:07",
+    "git": null,
+    "env": {
+      "python": "3.11.5",
+      "platform": "Windows-10-10.0.26100-SP0",
+      "sklearn": "1.7.2",
+      "numpy": "2.3.3",
+      "pandas": "2.2.2",
+      "torch": "2.4.1+cu121",
+      "lightgbm": null
+    },
+    "notes": "OVR LR / Calibrated LinearSVC / SGD partial_fit; thresholds per-label (thr_mean_floor)."
+  }
+]

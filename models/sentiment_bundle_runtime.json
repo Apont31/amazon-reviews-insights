@@ -1,0 +1,14 @@
+{
+  "bundle": "sentiment_bundle_runtime.joblib",
+  "tfidf": "features_tfidf_runtime_60k.joblib",
+  "chi2_k": 50000,
+  "grid": {
+    "C": [
+      0.25,
+      0.5,
+      1.0,
+      2.0
+    ]
+  },
+  "threshold_val_F1*": 0.5
+}

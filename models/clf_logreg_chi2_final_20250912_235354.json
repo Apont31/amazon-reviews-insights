@@ -1,0 +1,14 @@
+{
+  "artifact": "clf_logreg_chi2_final_20250912_235354.joblib",
+  "X_shape": [
+    120000,
+    180007
+  ],
+  "train/val/test": {
+    "train": 96000,
+    "val": 12000,
+    "test": 12000
+  },
+  "threshold": 0.2748431536764288,
+  "notes": "TF-IDF -> chi2(k) -> LogReg(lbfgs)."
+}

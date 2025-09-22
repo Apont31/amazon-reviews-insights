@@ -1,0 +1,5 @@
+spacy>=3.7
+keybert>=0.7.0
+sentence-transformers>=2.7.0
+transformers>=4.42.0
+torch>=2.2.0

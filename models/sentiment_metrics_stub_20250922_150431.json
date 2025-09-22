@@ -1,0 +1,10 @@
+{
+  "threshold": 0.2200693730666215,
+  "n_rows": 200000,
+  "split": {
+    "train": 160000,
+    "val": 20000,
+    "test": 20000
+  },
+  "note": "metrics minimal auto (AP/F1 non disponibles car non trouv\u00e9s)."
+}

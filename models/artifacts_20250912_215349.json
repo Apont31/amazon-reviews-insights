@@ -1,0 +1,8 @@
+{
+  "created": "20250912_215349",
+  "artifacts": [
+    "selector_chi2_k50000_20250912_215349.joblib",
+    "selector_l1_after_chi2_k50000_kept25000_20250912_215349.joblib",
+    "reducer_svd_k300_20250912_215349.joblib"
+  ]
+}

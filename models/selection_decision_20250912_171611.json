@@ -1,0 +1,13 @@
+{
+  "chosen_pipeline": "tfidf -> chi2(k=50k) -> logreg(lbfgs, L2, C=1.0)",
+  "k": 50000,
+  "logreg": {
+    "solver": "lbfgs",
+    "penalty": "l2",
+    "C": 1.0,
+    "max_iter": 5000,
+    "tol": 0.001
+  },
+  "notes": "Qualit\u00e9 \u2248 baseline; fit ~2.5x plus rapide; calibration pr\u00e9serv\u00e9e (t*\u22480.31).",
+  "created": "20250912_171611"
+}
