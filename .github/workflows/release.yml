@@ -1,0 +1,52 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - "v*"
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Cache pip
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements*.txt') }}
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Find latest sentiment bundle
+        id: find_bundle
+        shell: bash
+        run: |
+          BUNDLE=$(ls -1t models/sentiment_bundle_runtime_*.joblib | head -n1 || true)
+          if [ -z "$BUNDLE" ]; then
+            echo "No bundle found in models/"
+            exit 1
+          fi
+          echo "bundle=$BUNDLE" >> $GITHUB_OUTPUT
+          echo "Found bundle: $BUNDLE"
+
+      - name: Create GitHub Release
+        id: create_release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            ${{ steps.find_bundle.outputs.bundle }}
+          generate_release_notes: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
