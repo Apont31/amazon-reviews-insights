@@ -1,9 +1,16 @@
+# --- core (versions sûres sur ubuntu-latest)
 numpy<2
-scipy<1.11
+scipy>=1.9,<1.11
 scikit-learn>=1.3,<1.5
 joblib>=1.2
-pandas
-fastapi
-uvicorn
-streamlit
-pytest
+
+# --- utils
+pandas>=2.0,<2.2
+
+# --- app / api
+fastapi==0.110.*
+uvicorn[standard]==0.23.*
+streamlit==1.36.*
+
+# --- tests
+pytest>=7,<8
